@@ -426,12 +426,15 @@ body {
 }
 
 .services__item {
-	width: 32%;
-	margin-bottom: 40px;
+	width: 33.33333%;
 	position: relative;
-	padding-left: 85px;
-	padding-right: 35px;
+	padding: 0 35px 30px 85px;
 	box-sizing: border-box;
+	margin-bottom: 40px;
+}
+
+.services__item--border {
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .services__icon {
@@ -1187,6 +1190,16 @@ body {
 		border: 0;
 	}
 
+	/* Services */
+	.services__item {
+		width: 50%;
+		padding-bottom: 0;
+	}
+
+	.services__item--border {
+		border-bottom: 0;
+	}
+
 	.stat__item:last-child {
 		border-right: 0;
 	}
@@ -1202,6 +1215,10 @@ body {
 	/* Section */
 	.section {
 		padding: 40px 0;
+	}
+
+	.section--devices {
+		padding-bottom: 0;
 	}
 
 	/* Card */
@@ -1237,6 +1254,22 @@ body {
 
 	.slider__item.active:before {
 		width: 50%;
+	}
+
+	/* Services */
+	.services {
+		justify-content: center;
+	}
+
+	.services__item {
+		max-width: 400px;
+		width: 100%;
+		padding-left: 55px;
+		padding-right: 0;
+	}
+	
+	.services__icon {
+		left: 0;
 	}
 }
 
