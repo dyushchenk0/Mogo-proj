@@ -476,6 +476,12 @@ body {
 
 .devices__item {
 	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.devices__item--ipad {
+	width: 100%;
 }
 
 .devices__item--iphone {
@@ -1186,7 +1192,7 @@ body {
 		width: 33.33333%;
 		padding-top: 30px;
 		padding-bottom: 30px;
-		
+
 		border: 0;
 	}
 
@@ -1203,7 +1209,6 @@ body {
 	.stat__item:last-child {
 		border-right: 0;
 	}
-
 }
 
 @media (max-width: 770px) {
@@ -1248,6 +1253,14 @@ body {
 	}
 
 	/* Slider */
+	.slider__item {
+		font-size: 18px;
+	}
+
+	.slider__num {
+		font-size: 20px;
+	}
+
 	.slider__text {
 		display: none;
 	}
@@ -1267,7 +1280,7 @@ body {
 		padding-left: 55px;
 		padding-right: 0;
 	}
-	
+
 	.services__icon {
 		left: 0;
 	}
@@ -1281,6 +1294,15 @@ body {
 
 	.intro__title {
 		font-size: 40px;
+	}
+
+	/* Slider */
+	.slider__item {
+		font-size: 15px;
+	}
+
+	.slider__num {
+		font-size: 20px;
 	}
 
 	/* Section */
@@ -1299,17 +1321,35 @@ body {
 		margin: 20px auto;
 	}
 
-		/* Stat */
-		.stat__item {
-			width: 100%;
-			border-bottom: 1px solid #b5eae0;
-		}
+	/* Stat */
+	.stat__item {
+		width: 100%;
+		border-bottom: 1px solid #b5eae0;
+	}
 
-		.stat__item:last-child {
-			border-bottom: 0;
-		}
+	.stat__item:last-child {
+		border-bottom: 0;
+	}
 
-		.stat__count {
-			font-size: 52px;
-		}
+	.stat__count {
+		font-size: 52px;
+	}
+
+	/* Devices */
+	.devices {
+		min-width: 320px;
+		left: 15px;
+	}
+
+	.devices__item--iphone {
+		width: 180px;
+
+		bottom: -50px;
+		right: 0;
+	}
+
+	.devices__item--ipad {
+		max-width: 400px;
+		width: 100%;
+	}
 }
