@@ -494,18 +494,25 @@ body {
 /* We do */
 .wedo {
 	display: flex;
-	margin-top: 20px;
-	align-items: stretch;
+	flex-wrap: nowrap;
+	gap: 20px;
+	margin: 0;
 }
 
 .wedo__item {
-	flex: 1 1 0;
-	position: relative;
+	width: 50%;
+	padding: 0 10px;
 }
 
 .wedo__item:first-child {
 	margin-right: 20px;
 	object-fit: cover;
+}
+
+.wedo__img {
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 /* Accordion */
@@ -1283,6 +1290,18 @@ body {
 
 	.services__icon {
 		left: 0;
+	}
+
+	/* Wedo */
+	.wedo {
+		flex-wrap: wrap;
+	}
+
+	.wedo__item {
+		width: 100%;
+	}
+	.wedo__img {
+		display: none;
 	}
 }
 
