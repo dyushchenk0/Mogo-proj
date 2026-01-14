@@ -38,4 +38,4 @@ reflection.txt
 
 ## 📄 Контакти
 - GitHub: https://github.com/dyushchenk0
-- GitHub: https://github.com/Kirilo-Yushchenko
+- Telegram: @danillAldev
